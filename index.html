@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>运动会报名</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f0f0f0;
+        }
+        .full-screen {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .signup-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 10;
+        }
+        .signup-button:hover {
+            background-color: #45a049;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="full-screen" style="background-image: url('https://cuicancan.top/ydh.jpg');">
+        <div class="overlay">
+            <h1>欢迎参加运动会！</h1>
+            <p>请点击下方按钮进行报名。</p>
+            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=aiFm1EPGSkOcLgV0SMF8vlph6aeSzZNJjMJSEpNjJ4ZUQ1dTSTNMSjExSVRUU0lLQ1VPSEVIT1IwVy4u&origin=QRCode" class="signup-button" target="_blank">点击报名</a>
+        </div>
+    </div>
+
+</body>
+</html>

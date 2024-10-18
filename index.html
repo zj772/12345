@@ -8,18 +8,18 @@
         body, html {
             margin: 0;
             padding: 0;
-            height: 100%;
+            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             background-color: #f0f0f0;
+            height: 100vh;
         }
-        .full-screen {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
+        img {
+            max-width: 80%;
+            height: auto;
+            margin: 20px 0;
         }
         .signup-button {
             display: inline-block;
@@ -30,35 +30,22 @@
             text-decoration: none;
             border-radius: 5px;
             margin-top: 20px;
-            position: relative;
-            z-index: 10;
         }
         .signup-button:hover {
             background-color: #45a049;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 5;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="full-screen" style="background-image: url('https://cuicancan.top/ydh.jpg');">
-        <div class="overlay">
-            <h1>欢迎参加运动会！</h1>
-            <p>请点击下方按钮进行报名。</p>
-            <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=aiFm1EPGSkOcLgV0SMF8vlph6aeSzZNJjMJSEpNjJ4ZUQ1dTSTNMSjExSVRUU0lLQ1VPSEVIT1IwVy4u&origin=QRCode" class="signup-button" target="_blank">点击报名</a>
-        </div>
-    </div>
+    <!-- 第一张宣传图片 -->
+    <img src="http://gxwhy.net/js/k/20241018090602.jpg" alt="宣传图片1">
+
+    <!-- 第二张宣传图片 -->
+    <img src="http://gxwhy.net/js/k/20241018090604.jpg" alt="宣传图片2">
+
+    <!-- 报名按钮 -->
+    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=aiFm1EPGSkOcLgV0SMF8vlph6aeSzZNJjMJSEpNjJ4ZUQ1dTSTNMSjExSVRUU0lLQ1VPSEVIT1IwVy4u&origin=QRCode" class="signup-button" target="_blank">点击报名</a>
 
 </body>
 </html>
